@@ -16,3 +16,6 @@ cache:
 
 script:
   - ./gradlew clean build
+
+notifications:
+  slack: scsaci:${SLACK_TOKEN}
