@@ -18,4 +18,4 @@ script:
   - ./gradlew clean build
 
 notifications:
-  slack: scsaci:$SLACK_TOKEN#travis_build
+  slack: scsaci:MmCO8MbgVKJ5pkB0Ol7Szcoe
