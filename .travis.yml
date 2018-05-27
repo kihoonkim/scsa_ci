@@ -12,3 +12,5 @@ cache:
 
 script:
   - ./gradlew clean build
+
+sudo: true
