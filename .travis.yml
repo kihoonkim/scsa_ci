@@ -20,4 +20,4 @@ script:
 after_script:
   - echo $SLACK_TOKEN
 notifications:
-  slack: scsaci:$SLACK_TOKEN
+  slack: "scsaci:${SLACK_TOKEN}"
