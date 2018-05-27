@@ -19,3 +19,8 @@ script:
 
 notifications:
   slack: scsaci:MmCO8MbgVKJ5pkB0Ol7Szcoe
+
+deploy:
+  provider: heroku
+  api_key: 4735e264-c987-425f-b1c2-f2be6a8ec954
+  app: scsaci
