@@ -13,4 +13,8 @@ cache:
 script:
   - ./gradlew clean build
 
-sudo: true
+sudo: false
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
