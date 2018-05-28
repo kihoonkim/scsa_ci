@@ -1,26 +1,22 @@
 language: java
-
 before_install:
- - chmod +x gradlew
-
+- chmod +x gradlew
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 branches:
   only:
-    - master
-
+  - master
 cache:
   directories:
-    - $HOME/.gradle
-
+  - "$HOME/.gradle"
 script:
-  - ./gradlew clean build
-
-notifications:
-  slack: $SLACK_ACCOUNT_TOKEN
-
+- "./gradlew clean build"
 deploy:
   provider: heroku
   api_key: 4735e264-c987-425f-b1c2-f2be6a8ec954
   app: scsaci
+
+notifications:
+  slack:
+    rooms:
+      secure: L5Nfx9J8PGaldoiH2FL5vdVNWTSNMan7eRuXkAKSZbrfC3H2jknFBvEDJhPwOR6nrux8KvUO9ZY7KU7XPApU683QTZwEcvPoobBzfyeMIuawjB3Zvsuh4SoybsiDzUQx5QVuxzxOA1TVCOF50e1qzW3VPL5y1GuFrOYnYokGBM52IC67gJWT2eJIAVEpjHKmpatjH9CfqgX7UhhGvPP3eAnzri5S5S5y4mYKPQEZwd+NN4JR7ogMEy+tuR2MBkz2E1sURswne/5XRQcNCsY8vxzKhg73O9xMo9pi/QSsOZ9R9vnJBoQHuSvlE9LJI9gePq8n1q2zhs6Q/cApKhOwenKr4mtDv1WY1DBEUICy20UsOWigXcD0w8HNblDirQw02tea/c7mTRD0MTNhDM3xEWKO92CzEecbZn4xUI8Tdz8QLiOgEhFjlsoRtQD4KtkWt8Zk+odPRFi9yCDDgll2Fzndwr3iK0Mr5y1wBNZhFeTRPXCnoaHhDejJd5+EL7x36M8H6J6p0Ld0z2Xt2XHJcfdu22M7wVd5QWPXWXYaqQS856N28TK41Iyh3Ud/RcCBS+rBysVRoLKCWtkWdajBM+VIhYkh63VRnoPCQi9sU+R4VpasrSQplNBW+2bsLvp5oBQmhdUSUZ8P4JmBRshNAOIDvK30TVmE56A9+3q/Uec=
