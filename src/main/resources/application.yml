@@ -1,6 +1,6 @@
 spring:
   application:
-    name: schedule-local-service
+    name: student-service
   datasource:
       initialize: false
       sql-script-encoding: UTF-8

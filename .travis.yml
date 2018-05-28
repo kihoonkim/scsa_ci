@@ -13,8 +13,9 @@ script:
 - "./gradlew clean build"
 deploy:
   provider: heroku
-  api_key: 4735e264-c987-425f-b1c2-f2be6a8ec954
   app: scsaci
+  api_key:
+    secure: IXvicfIDTBrU/x8fi+WULM9gkqBf2bRektziwQL4W2Q2yy97XIQcNwYtkIZGUrZzlu4/4wvdhfgqmJcKy/5WaiGhgEgJ1c96lTg8q+oYoznvtylJ4cfyMvaQVwg80wsLYv53+6Q76PP77v/KGzP4kKpM85rgUsizF0DV3ztgiUSeDQX2xBlX/gMrn3CyM1eOAHiSGwPrbP7YloKSAIjMPh9ng4+PPOW0w7YnoOXuj6GzlR8DCoasAgUKIrTM664YsRMqoIRVW6/Q2/uUjlG0/VFnJ0dYmEJvkvEDczitfYSPCIlWN8TqU5aYR3q6BTyqzv7I9626ddF+0GUUOsp9i3SAFzLA9rC7HERwxUf7MwSV8oX9EACv48G8033ggb78M3AL+Em9q7TUHZ2NCEcFtn9yzrxCoFx1Z+xNiHlA+ULMSp9VR6eDj6C1GtVAIWxT+FbmXYf3GOq3ZSVj5iMnyYfuX7DmPIW/dJPMNsbLEN1YMx7ofQ17+U/OyN7jIn87T6+dLk77AcJmgP5tmKyhwDXqg1um5TrKmrqSKxqa534cPwkNr/j770PpH66f24TfIIRXBa4qE/Fhb70X+/ZCQDTaU0vAWwp7DiUJesezPLNxz1nH18698TznsbAyNxfEPyrbjAufiMelB0MjvtvjyNjhXkpWHIvbQCEAem1HTOQ=
 
 notifications:
   slack:
