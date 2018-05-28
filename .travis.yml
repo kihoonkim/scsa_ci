@@ -18,7 +18,7 @@ script:
   - ./gradlew clean build
 
 notifications:
-  slack: scsaci:MmCO8MbgVKJ5pkB0Ol7Szcoe
+  slack: $SLACK_ACCOUNT_TOKEN
 
 deploy:
   provider: heroku
