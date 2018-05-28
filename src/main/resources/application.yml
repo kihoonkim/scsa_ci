@@ -6,6 +6,8 @@ spring:
       sql-script-encoding: UTF-8
       driverClassName: org.mariadb.jdbc.Driver
       url: jdbc:${JAWSDB_MARIA_URL}
+      tomcat:
+        max-active: 5
   jpa:
       hibernate:
           #none, validate, update, create-drop, create
