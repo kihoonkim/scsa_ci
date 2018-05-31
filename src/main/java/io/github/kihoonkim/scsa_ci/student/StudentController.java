@@ -19,7 +19,7 @@ public class StudentController {
 
     @GetMapping("/students")
     public List<Student> getStudents() {
-        return (List<Student>) studentRepository.findAll();
+        return studentRepository.findAll();
     }
 
     @PostMapping("/students")
